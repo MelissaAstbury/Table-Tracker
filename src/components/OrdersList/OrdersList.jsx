@@ -8,7 +8,7 @@ function OrdersList() {
   const { orders } = useContext(OrderContext);
   const { updateTableStatus } = useContext(TableContext);
 
-  const handleServe = (tableId) => {
+  const handleServe = tableId => {
     updateTableStatus(tableId, 'served');
   };
 

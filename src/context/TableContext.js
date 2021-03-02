@@ -18,7 +18,7 @@ const updateTableStatus = (tableId, newStatus) => {
   })();
 };
 
-export const TableContextProvider = (props) => {
+const TableContextProvider = props => {
   const [tables, setTables] = useState([]);
 
   useEffect(() => {
@@ -39,3 +39,5 @@ export const TableContextProvider = (props) => {
     </TableContext.Provider>
   );
 };
+
+export default TableContextProvider;

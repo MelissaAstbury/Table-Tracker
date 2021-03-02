@@ -1,4 +1,4 @@
-import { TableContextProvider } from '../../context/TableContext';
+import TableContextProvider from '../../context/TableContext';
 import Tables from '../../components/Tables/Tables';
 import './WaiterPage.scss';
 

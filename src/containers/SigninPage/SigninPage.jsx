@@ -33,7 +33,7 @@ function SigninPage() {
     <>
       {!currentUser ? (
         <div className="login-wrapper">
-          <h2 className="title">Log In</h2>
+          <h2 className="title">Sign In</h2>
           {error && <p>{error}</p>}
           <form onSubmit={handleSubmit}>
             <div className="un " id="email">
@@ -55,15 +55,12 @@ function SigninPage() {
               />
             </div>
             <button className="submit" type="submit" disabled={loading}>
-              Log In
+              Sign In
             </button>
           </form>
         </div>
       ) : (
-        <div className="login-wrapper">
-          <h2 className="title">Welcome to Table Tracker!</h2>
-          <p>You are currently logged in as {currentUser.email}</p>
-        </div>
+        history.push('/waiter')
       )}
     </>
   );
